@@ -22,14 +22,14 @@ var delete_options = {
 	 */
 	"from_archive":false,
 	/*  unretweet: seems obvious, but it unretweet if set to true */
-	"unretweet":false,
+	"unretweet":true,
 	/* do_not_remove_pinned_tweet: THIS CAN FAIL. Twitter has too many different way to format their response that I cannot guarantee this to work 100%
 	   It should work for newer tweets. HOWEVER, use the "tweets_to_ignore" below and put in your pinned tweet ID, this will work 100%.
 	   'why do you make this option then', this is a safeguard for people that forgot to add their pinned tweet in the ignore list.
 	*/
 	"do_not_remove_pinned_tweet":true,
 	/* delete_message_with_url_only: self explanatory, but will delete tweets that contain links */
-	"delete_message_with_url_only":false,
+	"delete_message_with_url_only":true,
 	/* delete_specific_ids_only: Array of tweet IDs that the script will delete. The script will not delete anything else than these IDs. Any other option will be ignored.
 	   a tweet id is the number you see on the right of the url: https://x.com/USERNAME/status/1695001000000000
 	   an example of how the array can look like : ["1695001000000000", "1303001000000000"] don't forget the quotes ""
